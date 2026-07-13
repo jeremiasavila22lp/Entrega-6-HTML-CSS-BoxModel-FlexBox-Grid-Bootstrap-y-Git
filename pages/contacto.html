@@ -42,14 +42,51 @@
 
                 <p class="texto-normal">Te dejare mis datos para contactarme de alguna forma</p>
 
-                <h3 class="titulo-secundario">Mis datos</h3>
-                <p class="texto-normal">Email: avilajeremias184@gmail.com</p>
-                <p class="texto-normal">Telefono: 3585178252</p>
 
-                <figure class="figure-index">
-                    <img src="../../media/Mensaje.png" alt="Imagen de presentación del portafolio" width="600">
-                    <figcaption class="texto-normal">Disponible para nuevas oportunidades!.</figcaption>
-                </figure>
+                <div class="row align-items-center mt-5">
+                    <!-- Columna Izquierda: Formulario -->
+                    <div class="col-md-6 mb-4">
+                        <h3 class="titulo-secundario">Dejame un mensaje</h3>
+                        <!-- Usamos p-4 (padding) y shadow-sm (sombrita) de Bootstrap, pero con tu color de fondo -->
+                        <form class="p-4 rounded shadow-sm" style="background-color: var(--secondary-color);">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label" style="color: var(--text-color);">Nombre
+                                    completo</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label" style="color: var(--text-color);">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                    required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label"
+                                    style="color: var(--text-color);">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="4"
+                                    placeholder="¿En qué te puedo ayudar?" required></textarea>
+                            </div>
+                            <!-- Botón con tu tipografía Abel y color primario -->
+                            <button type="submit" class="btn btn-dark w-100"
+                                style="background-color: var(--primary-color); border: none; font-family: 'Abel', sans-serif; font-size: 1.2rem;">Enviar
+                                Mensaje</button>
+                        </form>
+                    </div>
+
+                    <!-- Columna Derecha: Tus datos y la imagen -->
+                    <div class="col-md-6 text-center">
+                        <h3 class="titulo-secundario">Otros medios</h3>
+                        <p class="texto-normal mb-1"><strong>Email:</strong> avilajeremias184@gmail.com</p>
+                        <p class="texto-normal mb-4"><strong>Teléfono:</strong> 3585178252</p>
+                        <figure class="figure-index m-0">
+                            <!-- img-fluid hace que la imagen sea responsive automáticamente -->
+                            <img src="../../media/Mensaje.png" alt="Imagen de presentación del portafolio"
+                                class="img-fluid rounded shadow" style="max-width: 400px; width: 100%;">
+                            <figcaption class="texto-normal mt-2">¡Disponible para nuevas oportunidades!</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
             </article>
         </section>
     </main>
