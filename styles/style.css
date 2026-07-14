@@ -87,6 +87,12 @@ section {
     color: var(--text-color);
     text-decoration: none;
     /* Mejor contraste */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.item-lista:hover {
+    color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 .texto-footer {
@@ -250,7 +256,12 @@ section {
     /* Tu color global */
     border: 2px solid var(--text-color);
     /* Tu borde personalizado */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* =========================================
