@@ -1,0 +1,43 @@
+@use "../utilities/variables" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+
+/* =========================================
+    REGLA DE ORO PARA IMÁGENES RESPONSIVAS
+   ========================================= */
+
+img {
+    max-width: 100%;
+    /* Nunca seas más ancha que tu caja padre */
+    height: auto;
+    /* Mantené tu proporción, no te estires feo */
+    display: block;
+    /* Evita espacios raros por debajo de la imagen */
+}
+
+/* =========================================
+    2. ESTILOS BASE (Estructura principal)
+   ========================================= */
+
+body {
+    background-color: $primary-color;
+    font-family: "Abel", sans-serif;
+    font-weight: 100;
+
+}
+
+section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.caja-contacto {
+    background-color: $secondary-color;
+}

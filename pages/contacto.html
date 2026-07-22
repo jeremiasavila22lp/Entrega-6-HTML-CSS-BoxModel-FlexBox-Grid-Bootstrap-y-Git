@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: var(--secondary-color);">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand logo" href="../index.html">
                     <img src="../../media/Documento.png" alt="Logo del portafolio" width="60">
@@ -44,29 +44,25 @@
 
 
                 <div class="row align-items-center mt-5">
-                    <!-- Columna Izquierda: Formulario -->
                     <div class="col-md-6 mb-4">
                         <h3 class="titulo-secundario">Dejame un mensaje</h3>
-                        <!-- Usamos p-4 (padding) y shadow-sm (sombrita) de Bootstrap, pero con tu color de fondo -->
-                        <form class="p-4 rounded shadow-sm" style="background-color: var(--secondary-color);">
+                        <form class="p-4 rounded shadow-sm caja-contacto">
                             <div class="mb-3">
-                                <label for="nombre" class="form-label" style="color: var(--text-color);">Nombre
+                                <label for="nombre" class="form-label">Nombre
                                     completo</label>
                                 <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez"
                                     required>
                             </div>
                             <div class="mb-3">
-                                <label for="email" class="form-label" style="color: var(--text-color);">Email</label>
+                                <label for="email" class="form-label">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
                                     required>
                             </div>
                             <div class="mb-3">
-                                <label for="mensaje" class="form-label"
-                                    style="color: var(--text-color);">Mensaje</label>
+                                <label for="mensaje" class="form-label">Mensaje</label>
                                 <textarea class="form-control" id="mensaje" rows="4"
                                     placeholder="¿En qué te puedo ayudar?" required></textarea>
                             </div>
-                            <!-- Botón con tu tipografía Abel y color primario -->
                             <button type="submit" class="btn btn-dark w-100"
                                 style="background-color: var(--primary-color); border: none; font-family: 'Abel', sans-serif; font-size: 1.2rem;">Enviar
                                 Mensaje</button>
@@ -79,7 +75,6 @@
                         <p class="texto-normal mb-1"><strong>Email:</strong> avilajeremias184@gmail.com</p>
                         <p class="texto-normal mb-4"><strong>Teléfono:</strong> 3585178252</p>
                         <figure class="figure-index m-0">
-                            <!-- img-fluid hace que la imagen sea responsive automáticamente -->
                             <img src="../../media/Mensaje.png" alt="Imagen de presentación del portafolio"
                                 class="img-fluid rounded shadow" style="max-width: 400px; width: 100%;">
                             <figcaption class="texto-normal mt-2">¡Disponible para nuevas oportunidades!</figcaption>

@@ -1,0 +1,52 @@
+.area-texto {
+    grid-area: texto;
+}
+
+.area-imagen {
+    grid-area: foto;
+}
+
+/* --- nombre para cada hijo proyectos --- */
+.tarjeta-proyecto1 {
+    grid-area: proyecto1;
+}
+
+.tarjeta-proyecto2 {
+    grid-area: proyecto2;
+}
+
+.tarjetas-imagenes {
+    grid-area: imagenes;
+}
+
+.grilla-index {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "texto"
+        "foto";
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "texto foto";
+    }
+}
+
+.grilla-proyectos {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "proyecto1"
+        "proyecto2"
+        "imagenes";
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "proyecto1 proyecto2"
+            "imagenes imagenes";
+    }
+}
