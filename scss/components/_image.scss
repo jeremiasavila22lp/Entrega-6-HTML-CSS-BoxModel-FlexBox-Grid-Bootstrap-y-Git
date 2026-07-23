@@ -1,0 +1,13 @@
+@use '../utilities/variables' as *;
+
+.imagen-servicios,
+.imagen-contacto,
+.imagen-sobremi {
+    border-radius: $border-radius;
+    box-shadow: $shadow-light;
+    transition: transform 0.6s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
